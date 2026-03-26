@@ -15,7 +15,11 @@ Appliction finished
 dart run intro.dart
 
 
-
+>> flutter run
 나가려면 q
 r -> f5
 R -> 재시작
+
+
+stl + enter
+-> 정적 위젯 자동 생성

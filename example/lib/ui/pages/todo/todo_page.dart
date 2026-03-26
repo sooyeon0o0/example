@@ -1,3 +1,4 @@
+import 'package:example/ui/pages/todo/widget/fillter_row.dart';
 import 'package:example/ui/pages/todo/widget/header.dart';
 import 'package:example/ui/pages/todo/widget/progress_card.dart';
 import 'package:flutter/material.dart';
@@ -16,6 +17,7 @@ class TodoPage extends StatelessWidget {
               //타이틀 상단
               Header(),
               ProgressCard(),
+              FillterRow(),
             ],
           ),
         ),
