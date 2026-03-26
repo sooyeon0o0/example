@@ -13,7 +13,7 @@ ___
 
 ### 3주차
 - Dart의 구조 파악
-- Dart Ui 파악
+- Ui 파악
 - To-Do List Ui 만들기(1)
 ___
 

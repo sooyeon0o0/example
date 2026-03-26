@@ -23,3 +23,15 @@ R -> 재시작
 
 stl + enter
 -> 정적 위젯 자동 생성
+
+
+Widget _buildFilter({bool isSelected = false}) { 
+--> bool isSelected = false (기본값 false)
+
+Widget _buildFilter({required bool isSelected}) {  
+--> T/F 의외 답이 올 수 X
+
+
+return SingleChildScrollView(
+      scrollDirection: .horizontal
+--> 자식들이 범위 밖으로 나간것을 스크롤 하게 해줌

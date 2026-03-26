@@ -27,14 +27,14 @@ class Header extends StatelessWidget {
        
         // 알람 아이콘
         Container(
-          padding: .all(10), // 사방
+          padding: .all(9), // 사방
           decoration: BoxDecoration(
             color: Colors.grey[300],
             shape: .circle,
           ),
           child: const Icon(
             Icons.notifications_outlined, 
-            size: 36,
+            size: 32,
           ),
         ),
       ],
