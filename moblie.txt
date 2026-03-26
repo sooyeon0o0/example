@@ -1,0 +1,21 @@
+flutter doctor -v
+--> 버전 체크 + 실행 가능한지 확인
+
+example로 바로 들어가고 싶으면
+--> code example
+
+var ==> 컨 + 알트 --> 상수형식
+var -> 상수 수정 O
+val -> 상수 수정X
+
+run --debug
+
+Appliction finished
+
+dart run intro.dart
+
+
+
+나가려면 q
+r -> f5
+R -> 재시작
