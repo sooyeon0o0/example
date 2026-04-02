@@ -14,8 +14,17 @@ ___
 ### 3주차
 - Dart의 구조 파악
 - Ui 파악
-- To-Do List Ui 만들기(1)
+- #### To-Do List Ui 만들기(1)
+    header 제작, process 제작
 ___
 
 ### 4주차
-- To-Do List Ui 만들기(2)
+- #### To-Do List Ui 만들기(2) 
+    process 제작 마무리 및 todo_list 제작
+
+___
+
+### 5주차
+- #### To-Do List Ui 만들기(3)
+    todo_list 제작 마무리 및 button nav 제작
+- #### 다음주까지 button nav 마무리 해오는 과제

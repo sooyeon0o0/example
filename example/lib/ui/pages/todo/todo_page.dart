@@ -1,3 +1,4 @@
+import 'package:example/ui/pages/todo/botton_navigation/buttom_navigation.dart';
 import 'package:example/ui/pages/todo/widget/filter_row.dart';
 import 'package:example/ui/pages/todo/widget/header.dart';
 import 'package:example/ui/pages/todo/widget/progress_card.dart';
@@ -19,11 +20,14 @@ class TodoPage extends StatelessWidget {
 
             children: [
               //타이틀 상단
-              Header(),
-              ProgressCard(),
-              FilterRow(),
+              const Header(),
+              const ProgressCard(),
+              const FilterRow(),
               _buildTodoTitle(),
-              TodoList(),
+              const TodoList(),
+
+              // TODO: buttom navigation
+              const BottomNavigation(),
             ],
           ),
         ),

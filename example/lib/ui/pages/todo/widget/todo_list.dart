@@ -1,15 +1,43 @@
+import 'package:example/enum/process.dart';
+import 'package:example/ui/pages/todo/widget/circle_check_box.dart';
+import 'package:example/ui/pages/todo/widget/process_badge.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 class TodoList extends StatelessWidget {
   const TodoList({super.key});
 
   @override
   Widget build(BuildContext context) {
+    // 더미 데이터 생성
+    final dummy = [
+      (
+        title: "운동하기",
+        filter: "건강",
+        time: DateTime.now(),
+        process: Process.doing,
+      ),
+      (
+        title: "저녁식사",
+        filter: "건강",
+        time: DateTime.now(),
+        process: Process.todo,
+      ),
+      (
+        title: "대학교 수업",
+        filter: "학업",
+        time: DateTime.now(),
+        process: Process.done,
+      ),
+    ];
+
     return ListView.separated(
-      itemCount: 4,
+      itemCount: dummy.length,
       shrinkWrap: true,
       separatorBuilder: (context, index) => SizedBox(height: 12),
       itemBuilder: (context, index) {
+        final data = dummy[index];
+
         return Container(
           padding: .symmetric(horizontal: 18, vertical: 20),
           decoration: BoxDecoration(
@@ -20,34 +48,27 @@ class TodoList extends StatelessWidget {
             spacing: 12,
             children: [
               // 체크박스
-              Container(
-                width: 24,
-                height: 24,
-                decoration: BoxDecoration(
-                  shape: .circle,
-                  color: Colors.grey[300],
-                  border: .all(color: Colors.grey),
-                ),
-              ),
+              CircleCheckBox(value: data.process == .done),
 
               // 할 일 텍스트
-              Container(
+              Expanded(
                 child: Column(
                   crossAxisAlignment: .start,
                   children: [
                     Text(
-                      '운동 $index분',
+                      data.title,
                       style: const TextStyle(fontSize: 16, fontWeight: .w600),
                     ),
                     Text(
-                      '건강 · 오후 00:0$index',
+                      '${data.filter} · ${DateFormat('hh:mm').format(data.time)}',
                       style: const TextStyle(color: Colors.grey),
                     ),
                   ],
                 ),
               ),
 
-              // TODO: 예정중, 뭐시기 만들기
+              //Process Badge
+              ProcessBadge(process: data.process),
             ],
           ),
         );
