@@ -1,4 +1,4 @@
-import 'package:example/ui/pages/todo/botton_navigation/wedget/nav_button.dart';
+import 'package:example/ui/pages/todo/bottom_navigation/widget/nav_bottom.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavigation extends StatefulWidget {
